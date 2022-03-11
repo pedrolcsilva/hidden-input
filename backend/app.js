@@ -18,12 +18,11 @@ app.use(cors()); //habilitando cors na nossa aplicacao
 app.get('/', (req, res) => res.send("Hello World"))
 
 app.get('/home', function(req, res) {
-    let funcSearch = funcionarios.slice();
     
     funcionarios.forEach(element => {
         if(element.token == "33562"){
             console.log("Logado!!")
-            res.json({ auth: true, token: form.token });
+            res.json({ auth: true, token: "33562" });
         }else{
             res.json({ auth: false, token: "" });
         }
