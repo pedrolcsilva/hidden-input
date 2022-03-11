@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href ="styles.css">
+    </head>
+
+    <body>
+
+        <form id="reg">
+            <h3>Cadastro</h3>
+
+            <label for="name">Nome: </label>
+            <input type="text" name="name" />
+
+            <label for="pass">Senha: </label>
+            <input type="password" name="pass" />
+
+            <button id="register" type="submit">Cadastrar</button>
+
+            <div id="modal"></div>
+        
+        </form>
+
+
+        <form id="log">
+            <h3>Login</h3>
+
+            <label for="name">Nome: </label>
+            <input type="text" name="name" />
+
+            <label for="pass">Senha: </label>
+            <input type="password" name="pass"/>
+
+            <input type="hidden" name="token" id="token" value="33562"/>
+
+            <button id="login" type="submit">Entrar</button>
+
+            <div id="modal2"></div>
+        
+        </form>
+
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
